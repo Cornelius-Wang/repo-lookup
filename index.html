@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Repository Search</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <h1>Repository Search</h1>
+
+        <form id="js-form">
+            <label for="user handle">User Handle</label>
+            <input type="text" name="user handle" id="js-search" requred>
+            <input type="submit" value="Search">
+        </form>
+        <div class="result-title hidden">
+            <h2>Repository Results:</h2>
+        </div>
+        <section id="js-results" class="results hidden">
+            <ul id="result-list"></ul>
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
